@@ -1,4 +1,3 @@
-```markdown
 # **HU-05 - Implementación Backend Spring Boot con Estructura Base**
 
 ## **Descripción**
@@ -12,7 +11,6 @@ Implementar el backend para el sistema de facturación utilizando la estructura 
 ## **Estructura del Proyecto**
 
 ![Estructura_SRC](Captura.png)
-```
 
 ## **Endpoints Clave**
 
