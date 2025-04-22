@@ -10,32 +10,32 @@ Implementar el backend para el sistema de facturación utilizando la estructura 
 - API REST documentada con Swagger/OpenAPI
 
 ## **Estructura del Proyecto**
-```
 
 ![Estructura_SRC](Captura.png)
+```
 
-````
 ## **Endpoints Clave**
 
 ### **Productos**
+
 - `GET /api/productos` → Lista todos los productos
 - `GET /api/productos/{id}` → Obtiene producto por ID
 - `POST /api/productos` → Crea nuevo producto
+
 ```json
 // Ejemplo Request POST
 {
   "nombre": "Laptop",
-  "precio": 1200.50,
+  "precio": 1200.5,
   "categoria": "Tecnología"
 }
-````
+```
 
 ### **Facturas**
 
 - `POST /api/facturas` → Genera nueva factura
 
 ```json
-// Ejemplo Request
 {
   "cliente": "Cliente Ejemplo",
   "items": [
@@ -46,21 +46,21 @@ Implementar el backend para el sistema de facturación utilizando la estructura 
 }
 ```
 
-````
 ### **Entidades Principales**
-| Entidad       | Campos                            |
-|---------------|-----------------------------------|
-| `Producto`    | id, nombre, descripción, precio  |
-| `Factura`     | id, cliente, fecha, total        |
-| `ItemFactura` | id, cantidad                     |
+
+| Entidad       | Campos                          |
+| ------------- | ------------------------------- |
+| `Producto`    | id, nombre, descripción, precio |
+| `Factura`     | id, cliente, fecha, total       |
+| `ItemFactura` | id, cantidad                    |
 
 ## **Endpoints Implementados**
 
-| Método | Endpoint                | Body Request (Ejemplo)            |
-|--------|-------------------------|-----------------------------------|
-| POST   | `/api/productos`        | `{"nombre": "Laptop", "precio": 1500}` |
-| GET    | `/api/productos`        | -                                 |
-| POST   | `/api/facturas`         | `{"cliente": "ABC Corp", "items": [{"productoId":1, "cantidad":2}]}` |
+| Método | Endpoint         | Body Request (Ejemplo)                                               |
+| ------ | ---------------- | -------------------------------------------------------------------- |
+| POST   | `/api/productos` | `{"nombre": "Laptop", "precio": 1500}`                               |
+| GET    | `/api/productos` | -                                                                    |
+| POST   | `/api/facturas`  | `{"cliente": "ABC Corp", "items": [{"productoId":1, "cantidad":2}]}` |
 
 ## **Configuración BD**
 
@@ -68,7 +68,7 @@ Implementar el backend para el sistema de facturación utilizando la estructura 
 # application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/movil_parcial_c2
 spring.jpa.hibernate.ddl-auto=update
-````
+```
 
 ## **Documentación Adicional**
 
