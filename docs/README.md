@@ -9,4 +9,4 @@ Este directorio contiene toda la documentación relacionada con el proyecto Expl
 - `HU-02/`: Implementación del Componente de Encabezado de Factura
 - `HU-03/`: Implementación del Componente de Métodos de Pago
 - `HU-04/`: Implementación de Pantalla Principal
-- `HU-05/`:
+- `HU-05/`: Implementación Backend Spring Boot con Estructura Base
