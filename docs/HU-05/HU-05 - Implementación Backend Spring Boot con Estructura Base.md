@@ -12,27 +12,7 @@ Implementar el backend para el sistema de facturación utilizando la estructura 
 ## **Estructura del Proyecto**
 ```
 
-src
-├── Controller/
-│ ├── FacturaController.java
-│ ├── ProductoController.java
-│ └── ABaseController.java
-├── DTO/
-│ └── ApiResponseDto.java
-├── Entity/
-│ ├── Factura.java
-│ ├── ItemFactura.java
-│ ├── Producto.java
-│ └── ABaseEntity.java
-├── IRepository/
-│ └── IBaseRepository.java
-├── IService/
-│ └── IBaseService.java
-├── Service/
-│ ├── FacturaService.java
-│ ├── ProductoService.java
-│ └── ABaseService.java
-└── AppMovilG1ParcialApplication.java
+![Estructura_SRC](Captura.png)
 
 ````
 ## **Endpoints Clave**
