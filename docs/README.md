@@ -8,5 +8,5 @@ Este directorio contiene toda la documentación relacionada con el proyecto Expl
 - `HU-01/`: Implementación del Componente de Productos
 - `HU-02/`: Implementación del Componente de Encabezado de Factura
 - `HU-03/`: Implementación del Componente de Métodos de Pago
-- `HU-04/`:
+- `HU-04/`: Implementación de Pantalla Principal
 - `HU-05/`:
