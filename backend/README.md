@@ -1,21 +1,53 @@
-# Backend de Explora Neiva - El Corazón de la Plataforma
+# Proyecto Parcial - Aplicación de Facturación Básica
 
-El backend de Explora Neiva es una API RESTful desarrollada con Spring Boot que sirve como columna vertebral de toda la plataforma. Implementamos un sistema que maneja:
+Este proyecto es una aplicación desarrollada utilizando **Ionic** con **React** para el frontend. Se estructura con un enfoque de componentes reutilizables y una pantalla principal integradora. Además, se incluye un concepto básico de backend y base de datos aunque no se implementa la conexión en este parcial.
 
-- ## Autenticación JWT
-  La autenticación en el backend utiliza **JSON Web Tokens (JWT)** para garantizar la seguridad. Un JWT es un token digital que contiene información codificada y se utiliza para verificar la identidad del usuario.
+---
 
-### ¿Cómo funciona?
+## 🧩 Tecnologías Utilizadas
 
-1. **Inicio de Sesión**: El usuario se autentica proporcionando sus credenciales.
-2. **Generación del Token**: Al autenticarse correctamente, el sistema genera un token único que contiene información como el ID del usuario y su rol.
-3. **Uso del Token**: El token se envía con cada solicitud a la API para verificar la identidad del usuario.
-4. **Caducidad**: Los tokens tienen un tiempo de expiración para garantizar la seguridad. Si el token expira, el usuario debe iniciar sesión de nuevo.
+- **Frontend:** Ionic + React
+- **Backend (conceptual):** Spring Boot (Java)
+- **Base de Datos (conceptual):** MySQL
 
-### Beneficios:
+---
 
-- **Seguro**: Los datos del usuario están protegidos.
-- **Fácil de usar**: Solo necesitas adjuntar el token en cada solicitud.
+## 📱 Frontend - Ionic React
 
-- ## Gestión de Experiencias
-  Lógica compleja para manejar disponibilidad de tours, validación de horarios y gestión de anfitriones.
+El frontend es la parte visual e interactiva de la aplicación. Se desarrolla usando **Ionic con React**, lo que permite construir interfaces responsivas y modernas. En este proyecto, se implementan los siguientes **componentes reutilizables**:
+
+- **Pantalla de productos:** permite mostrar productos y agregar al carrito.
+- **Pantalla de factura:** formulario para el encabezado de la factura (cliente, fecha, etc).
+- **Tipos de pago:** selección de método de pago (efectivo, tarjeta, etc).
+
+Una **pantalla principal** reúne estos componentes para que el usuario pueda realizar todo el flujo de facturación en una sola vista.
+
+---
+
+## ⚙️ Backend - Spring Boot (Definición)
+
+El backend representa la lógica del servidor. En un sistema completo, se encargaría de:
+
+- Recibir solicitudes del frontend.
+- Procesar datos, reglas de negocio y validaciones.
+- Conectarse a la base de datos para almacenar o recuperar información.
+- Exponer servicios (API REST) que el frontend pueda consumir.
+
+Aunque en este parcial no se implementa el backend, se plantea usar **Spring Boot** como tecnología ideal por su rapidez, estructura modular y compatibilidad con bases de datos relacionales.
+
+---
+
+## 🗃️ Base de Datos - MySQL (Definición)
+
+La base de datos se encarga de guardar la información de forma persistente. En este proyecto, la base de datos **MySQL** podría almacenar datos como:
+
+- Productos
+- Facturas
+- Métodos de pago
+- Clientes
+
+La integración de la base de datos con el backend permitiría consultar y guardar datos desde la aplicación.
+
+---
+
+## 📌 Estructura del Proyecto (Frontend)
