@@ -1,0 +1,37 @@
+@startuml
+!define RECTANGLE class
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+}
+
+RECTANGLE Componente_Productos {
+}
+
+RECTANGLE Filtros
+RECTANGLE Listado_de_Productos
+RECTANGLE Tarjeta_Producto_1
+RECTANGLE Tarjeta_Producto_2
+RECTANGLE Imagen
+RECTANGLE Nombre
+RECTANGLE Precio
+RECTANGLE Selector_Cantidad
+RECTANGLE Boton_Agregar
+RECTANGLE Resumen_Carrito
+RECTANGLE Items
+RECTANGLE Total
+
+Componente_Productos --> Filtros
+Componente_Productos --> Listado_de_Productos
+Listado_de_Productos --> Tarjeta_Producto_1
+Listado_de_Productos --> Tarjeta_Producto_2
+Tarjeta_Producto_1 --> Imagen
+Tarjeta_Producto_1 --> Nombre
+Tarjeta_Producto_1 --> Precio
+Tarjeta_Producto_1 --> Selector_Cantidad
+Tarjeta_Producto_1 --> Boton_Agregar
+Componente_Productos --> Resumen_Carrito
+Resumen_Carrito --> Items
+Resumen_Carrito --> Total
+@enduml
